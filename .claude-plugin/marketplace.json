@@ -15,7 +15,6 @@
         "repo": "oposs/mkp-builder"
       },
       "description": "Comprehensive Checkmk 2.3.x plugin development guide - SNMP, agent-based, special agents, notifications, metrics, rulesets, bakery, and MKP packaging",
-      "version": "0.1.0",
       "author": {
         "name": "Tobias Oetiker <tobi@oetiker.ch>"
       },
