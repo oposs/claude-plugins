@@ -39,6 +39,20 @@ For **egui-shadcn** (`/plugin install egui-shadcn@oposs-plugins`):
 - *"Port this shadcn Card and form to egui/eframe"*
 - *"Make my eframe app look like shadcn"*
 
+## Published versions
+
+`plugin-versions.json` records the version each plugin currently publishes in its own
+`.claude-plugin/plugin.json`. It is maintained by the **Track plugin versions** workflow,
+which reads every plugin repository hourly and commits when a version changes.
+
+This is not bookkeeping for its own sake. Claude resolves a plugin's version from the
+plugin repository, but only re-resolves when it re-fetches this marketplace — so a plugin
+can publish a new version and no user will ever see it until *this* repository moves.
+The tracker's commit is what moves it.
+
+All plugin repositories are public, so the workflow reads them over anonymous HTTPS and
+writes only here, with the built-in `GITHUB_TOKEN`. It needs no PAT, deploy key or App.
+
 ## License
 
 See individual plugin repositories for license details.
