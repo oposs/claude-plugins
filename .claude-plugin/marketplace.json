@@ -20,7 +20,13 @@
       },
       "homepage": "https://github.com/oposs/mkp-builder",
       "repository": "https://github.com/oposs/mkp-builder",
-      "keywords": ["checkmk", "monitoring", "mkp", "snmp", "plugins"],
+      "keywords": [
+        "checkmk",
+        "monitoring",
+        "mkp",
+        "snmp",
+        "plugins"
+      ],
       "category": "development"
     },
     {
@@ -29,14 +35,43 @@
         "source": "github",
         "repo": "oetiker/egui-shadcn"
       },
-      "description": "Build polished Rust egui GUIs from shadcn designs (backend-agnostic — eframe, egui-winit, or any backend) - vendors a tested shadcn-v4 component module (theme, layout helpers, components) plus a layout-first workflow with headless render verification",
+      "description": "Build polished Rust egui GUIs from shadcn designs (backend-agnostic \u2014 eframe, egui-winit, or any backend) - vendors a tested shadcn-v4 component module (theme, layout helpers, components) plus a layout-first workflow with headless render verification",
       "version": "0.2.0",
       "author": {
         "name": "Tobias Oetiker <tobi@oetiker.ch>"
       },
       "homepage": "https://github.com/oetiker/egui-shadcn",
       "repository": "https://github.com/oetiker/egui-shadcn",
-      "keywords": ["egui", "eframe", "rust", "gui", "shadcn", "design-system"],
+      "keywords": [
+        "egui",
+        "eframe",
+        "rust",
+        "gui",
+        "shadcn",
+        "design-system"
+      ],
+      "category": "development"
+    },
+    {
+      "name": "skill-optimizer",
+      "source": {
+        "source": "github",
+        "repo": "oetiker/skill-optimizer"
+      },
+      "description": "Slim a skill or long prompt for a specific model by measuring which instructions that model already follows on its own - sealed recall and behaviour probes separate what the model knows from what it does, edits are applied as span surgery, and a repeated regression run proves the trim changed nothing",
+      "version": "0.1.0",
+      "author": {
+        "name": "Tobias Oetiker <tobi@oetiker.ch>"
+      },
+      "homepage": "https://github.com/oetiker/skill-optimizer",
+      "repository": "https://github.com/oetiker/skill-optimizer",
+      "keywords": [
+        "skill",
+        "prompt-engineering",
+        "tokens",
+        "evaluation",
+        "review"
+      ],
       "category": "development"
     }
   ]
