@@ -30,13 +30,42 @@
         "repo": "oetiker/egui-shadcn"
       },
       "description": "Build polished Rust egui GUIs from shadcn designs (backend-agnostic — eframe, egui-winit, or any backend) - vendors a tested shadcn-v4 component module (theme, layout helpers, components) plus a layout-first workflow with headless render verification",
-      "version": "0.2.0",
       "author": {
         "name": "Tobias Oetiker <tobi@oetiker.ch>"
       },
       "homepage": "https://github.com/oetiker/egui-shadcn",
       "repository": "https://github.com/oetiker/egui-shadcn",
       "keywords": ["egui", "eframe", "rust", "gui", "shadcn", "design-system"],
+      "category": "development"
+    },
+    {
+      "name": "repo-infra",
+      "source": {
+        "source": "github",
+        "repo": "oposs/repo-infra"
+      },
+      "description": "Bring a repository's release, protection, CI and documentation infrastructure up to the current standard, and keep it there - reports how far a repo has drifted, then upgrades it without discarding local edits",
+      "author": {
+        "name": "Tobias Oetiker <tobi@oetiker.ch>"
+      },
+      "homepage": "https://github.com/oposs/repo-infra",
+      "repository": "https://github.com/oposs/repo-infra",
+      "keywords": ["github-actions", "ci", "release", "infrastructure", "standards"],
+      "category": "development"
+    },
+    {
+      "name": "skill-optimizer",
+      "source": {
+        "source": "github",
+        "repo": "oetiker/skill-optimizer"
+      },
+      "description": "Slim a skill or long prompt for a specific model by measuring which instructions that model already follows on its own - sealed recall and behaviour probes per claim, span-surgery edits, and a repeated regression run - then removing only what is proven redundant",
+      "author": {
+        "name": "Tobias Oetiker <tobi@oetiker.ch>"
+      },
+      "homepage": "https://github.com/oetiker/skill-optimizer",
+      "repository": "https://github.com/oetiker/skill-optimizer",
+      "keywords": ["skill", "prompt-engineering", "tokens", "evaluation", "review", "claude-code"],
       "category": "development"
     }
   ]
