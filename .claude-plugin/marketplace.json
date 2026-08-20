@@ -12,14 +12,14 @@
       "name": "cmk-oposs-plugin",
       "source": {
         "source": "github",
-        "repo": "oposs/mkp-builder"
+        "repo": "oposs/cmk-oposs-plugin"
       },
       "description": "Comprehensive Checkmk 2.3.x plugin development guide - SNMP, agent-based, special agents, notifications, metrics, rulesets, bakery, and MKP packaging",
       "author": {
         "name": "Tobias Oetiker <tobi@oetiker.ch>"
       },
-      "homepage": "https://github.com/oposs/mkp-builder",
-      "repository": "https://github.com/oposs/mkp-builder",
+      "homepage": "https://github.com/oposs/cmk-oposs-plugin",
+      "repository": "https://github.com/oposs/cmk-oposs-plugin",
       "keywords": ["checkmk", "monitoring", "mkp", "snmp", "plugins"],
       "category": "development"
     },
