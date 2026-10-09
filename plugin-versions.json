@@ -1,6 +1,6 @@
 {
   "cmk-oposs-plugin": "2.3.0",
-  "egui-shadcn": "0.3.0",
+  "egui-shadcn": "0.3.1",
   "repo-infra": "1.0.2",
   "skill-optimizer": "0.1.0"
 }
