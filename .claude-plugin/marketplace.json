@@ -27,7 +27,8 @@
       "name": "repo-infra",
       "source": {
         "source": "github",
-        "repo": "oposs/repo-infra"
+        "repo": "oposs/repo-infra",
+        "ref": "v2"
       },
       "description": "Bring a repository's release, protection, CI and documentation infrastructure up to the current standard, and keep it there - reports how far a repo has drifted, then upgrades it without discarding local edits",
       "author": {

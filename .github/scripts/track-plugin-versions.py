@@ -26,9 +26,14 @@ STATE_FILE = REPO_ROOT / "plugin-versions.json"
 TIMEOUT = 30
 
 
-def fetch_version(repo: str) -> str:
-    """Read .claude-plugin/plugin.json from a GitHub repo's default branch."""
-    url = f"https://raw.githubusercontent.com/{repo}/HEAD/.claude-plugin/plugin.json"
+def fetch_version(repo: str, ref: str = "HEAD") -> str:
+    """Read .claude-plugin/plugin.json from a GitHub repo at the entry's ref.
+
+    Without a ref Claude installs the default branch, so HEAD is read. With one
+    (for example a moving major tag like v2) Claude installs that ref, so the
+    version recorded here must come from it too.
+    """
+    url = f"https://raw.githubusercontent.com/{repo}/{ref}/.claude-plugin/plugin.json"
     req = urllib.request.Request(url, headers={"User-Agent": "oposs-plugins-version-tracker"})
     with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
         manifest = json.load(resp)
@@ -66,7 +71,7 @@ def main() -> int:
             continue
         repo = source["repo"]
         try:
-            version = fetch_version(repo)
+            version = fetch_version(repo, source.get("ref", "HEAD"))
         except (urllib.error.URLError, ValueError, json.JSONDecodeError, OSError) as exc:
             # Keep the last known version so a transient outage cannot erase state
             # or, worse, look like a downgrade on the next successful run.
